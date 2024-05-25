@@ -1,0 +1,21 @@
+version: '2'
+services:
+  web:
+    container_name: food_truck
+    platform: linux/amd64
+    build: .
+    command: npm run start
+    ports:
+      - '4001:4001'
+    env_file:
+      - .env
+    restart: on-failure
+    networks:
+      - authentication_some-net
+    environment:
+      APP_CONTEXT: '${APP_CONTEXT}'
+      PORT: 4001
+      API_VERSION: 'v1'
+networks:
+  authentication_some-net:
+    external: false

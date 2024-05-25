@@ -1,0 +1,12 @@
+node_modules
+build
+.env
+yarn-error.log
+data
+.env.live
+.env.local
+.env.test
+*.DS_Store
+.DS_Store
+src/db/models/.DS_Store
+src/db/.DS_Store
