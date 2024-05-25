@@ -105,7 +105,7 @@ apiRouter.get('/data', async (req, res) => {
       message: 'Data fetched successfully!',
       data: result,
       currentPage: pageNumber,
-      totalPages: totalPages,
+      totalPages: totalPages === 0 ? 1 : totalPages,
       totalItems: totalItems,
       hasPrevious: hasPrevious,
       hasNext: hasNext,
