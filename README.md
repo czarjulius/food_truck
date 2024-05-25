@@ -2,6 +2,11 @@
 
 A simple full-stack web application that will assist you in finding the nearest food Trucks in San Francisco
 
+<img src="/normal.png.png" width="500px" height="500px">
+<img src="/desktop.png" width="500px" height="500px">
+<img src="/tablet.png.png" width="500px" height="500px">
+<img src="/mobile.png.png" width="500px" height="500px">
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.

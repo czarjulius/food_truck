@@ -68,7 +68,7 @@ const App = () => {
         Find the nearest food Trucks in San Francisco
       </h1>
       <div className="flex flex-col pb-5">
-        <div className="flex flex-col items-end w-full lg:w-[60%] pb-5">
+        <div className="flex flex-col items-end w-full md:w-[80%] lg:w-[60%] pb-5">
           <SearchForm
             setSeearchValue={setSeearchValue}
             searchValue={searchValue}
