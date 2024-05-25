@@ -9,7 +9,6 @@ A simple full-stack web application that will assist you in finding the nearest 
 
 <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
   <img src="/tablet.png" style="width: 48%; height: auto; margin-bottom: 10px;">
-  <img src="/mobile.png" style="width: 48%; height: auto; margin-bottom: 10px;">
 </div>
 
 ## Getting Started
