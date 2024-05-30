@@ -27,7 +27,7 @@ The backend was implemented using:
 - [Express](https://expressjs.com/) Express is a minimal and flexible Node.js web application framework
 - [Typescript] This addition gives us more certainty over the code we write and helps reduce the number of bugs and issues that are created.
 
-# API Endpoints
+## API Endpoints
 
 | Method | Description                         | Endpoints |
 | ------ | ----------------------------------- | --------- |
