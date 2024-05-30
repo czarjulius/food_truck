@@ -1,5 +1,5 @@
 interface IFormProps {
-  setSeearchValue: (e: string) => void;
+  setSearchValue: (e: string) => void;
   searchValue: string;
   setCategory: (e: string) => void;
   onSubmit: (e: React.FormEvent<EventTarget>) => void;
@@ -18,7 +18,7 @@ const categoryOptions: CategoryType[] = [
   { value: 'facilitytype', label: 'Facility Type' },
 ];
 
-const SearchForm = ({ onSubmit, setSeearchValue, searchValue, category, setCategory }: IFormProps) => {
+const SearchForm = ({ onSubmit, setSearchValue, searchValue, category, setCategory }: IFormProps) => {
   return (
     <form style={{ width: '100%' }} className="mx-auto" onSubmit={onSubmit}>
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 gap-3">
@@ -46,7 +46,7 @@ const SearchForm = ({ onSubmit, setSeearchValue, searchValue, category, setCateg
             className="block h-[52px] p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-lg border-gray-300 focus:ring-blue-500 focus:border-blue-500"
             placeholder="Enter search keyword"
             required
-            onChange={(e) => setSeearchValue(e.target.value)}
+            onChange={(e) => setSearchValue(e.target.value)}
             value={searchValue}
           />
         </div>

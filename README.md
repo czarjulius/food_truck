@@ -18,8 +18,6 @@ These instructions will get you a copy of the project up and running on your loc
 ### Setting up
 
 - Install Node js
-- Clone the repository `https://github.com/czarjulius/food_truck.git`
-- Navigate to the location of the folder
 
 ### Backend
 
@@ -37,11 +35,19 @@ The backend was implemented using:
 
 ### Installing
 
+- Clone the repository `https://github.com/czarjulius/food_truck.git`
+- Navigate to the location of the folder
 - On your IDE terminal, navigate to the server directory by running `cd server`
 - Run `npm install` to install dependencies
 - Run `npm run dev` to start the server in dev mode
 - Visit `http://localhost:1001/data` to interact with the endpoints
-- Create a .env fille and populate it with similar variable as seen in `.env.sample`
+- Create a `.env` file and populate it with following variable eg:
+
+  `PORT=1001`
+
+  `API_VERSION=v1`
+
+  `APP_CONTEXT=development`
 
 ## Running the tests
 
@@ -71,7 +77,8 @@ The frontend was implmented using:
 - Run `npm install` to install dependencies
 - Run `npm start` to start the server in dev mode
 - Visit `http://localhost:3000` to interact with the web app.
-- Create a .env fille and populate it with similar variable as seen in `.env.sample`
+- Create a `.env` file and populate it with following variable eg:
+  `REACT_APP_BASE_URL=http://localhost:<PORT NUMBER>/data`
 
 ### Things I would have done if I had more time
 
