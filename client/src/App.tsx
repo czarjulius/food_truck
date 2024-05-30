@@ -40,7 +40,7 @@ const App = () => {
         </div>
       </div>
       {isLoading ? (
-        <Loader />
+        <Loader size={100} />
       ) : (
         <div style={{ width: '100%' }}>
           <MapComponent locations={cordinates} />
