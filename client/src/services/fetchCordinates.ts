@@ -1,6 +1,7 @@
 export const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 export type MobileFoodType = {
+  id: string;
   lat: number;
   lng: number;
   name: string;

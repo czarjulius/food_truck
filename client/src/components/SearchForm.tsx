@@ -26,7 +26,6 @@ const SearchForm = ({ onSubmit, setSearchValue, searchValue, category, setCatego
           required
           value={category}
           onChange={(e) => setCategory(e.target.value)}
-          id="search-dropdown"
           className="w-full h-[50px] md:w-auto flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none"
         >
           <option value="" disabled>

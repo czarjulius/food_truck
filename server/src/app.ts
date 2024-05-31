@@ -4,6 +4,7 @@ import helmet from 'helmet';
 const fs = require('fs');
 import path from 'path';
 import { parse } from 'csv';
+import { v4 as uuidv4 } from 'uuid';
 
 import createError from './helpers/createError';
 import { RESPONSE } from './constants/enums';
@@ -80,6 +81,7 @@ apiRouter.get('/data', async (req, res) => {
     const paginatedResult = filteredData.slice(startIndex, endIndex);
 
     const result = paginatedResult?.map((vendor) => ({
+      id: uuidv4(),
       lat: Number(vendor?.Latitude),
       lng: Number(vendor?.Longitude),
       name: vendor?.Applicant,
